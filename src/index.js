@@ -6,4 +6,4 @@ const data = {
     from: "http://iletaitungateau.com/articles/356"
 };
 
-console.log(postRecipe('https://fraaise2.herokuapp.com/api/recommendations/45', data));
+console.log(postRecipe('https://fraaise2.herokuapp.com/api/recommendations/55', data));
