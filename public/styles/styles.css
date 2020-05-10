@@ -1,0 +1,26 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    outline: none;
+}
+
+html {
+    box-sizing: content-box;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 2rem;
+    color: black;
+}
+
+iframe {
+    width: 20em;;
+    border: black solid 1px; 
+    margin: 0; 
+    padding: 0; 
+    align-items: center;
+}

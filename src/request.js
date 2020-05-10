@@ -8,7 +8,7 @@ const postRecipe = async (url = '', data = {}) => {
             body: JSON.stringify(data),
         });
         const returnData = await response.json();
-        console.log(returnData);
+        return returnData;
     } catch (error) {
         console.log('C\'est la merde mon coco!');
     }
