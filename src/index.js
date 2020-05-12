@@ -14,7 +14,7 @@ const toFrame = (image_url, number) => {
     document.querySelector(".frames").appendChild(ifrm);
 
     ifrm.setAttribute('src', image_url);
-}
+};
 
 (async () => {
     const result = await postRecipe('https://fraaise2.herokuapp.com/api/recommendations/55', data);
@@ -22,7 +22,7 @@ const toFrame = (image_url, number) => {
     toFrame(result.recipe_1.image_url, 1);
     toFrame(result.recipe_2.image_url, 2);
     toFrame(result.recipe_3.image_url, 3);
-  })()
+  })();
 
 
 
