@@ -12,6 +12,6 @@ const postRecipe = async (url = '', data = {}) => {
     } catch (error) {
         console.log('C\'est la merde mon coco!');
     }
-}
+};
 
 export { postRecipe as default }
