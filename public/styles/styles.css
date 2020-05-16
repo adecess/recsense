@@ -43,10 +43,13 @@ iframe {
     height: 100%;
     float: left;
     position: relative;
-    cursor: pointer;
 }
 
 #recommendations {
     display: grid;
     grid-template-areas: "a b c";
+}
+
+.parentImg {
+    text-align: center;
 }
