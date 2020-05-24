@@ -2,8 +2,8 @@ import postRecipe from './request'
 
 // post body data 
 const data = {
-    user_id: "140",
-    from: "http://iletaitungateau.com/articles/356"
+    user_id: parseInt(document.querySelector('#recommendations').dataset.fraaiseId),
+    from: window.location.href
 };
 
 const toFrame = (image_url, title, link, number) => {
