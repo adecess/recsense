@@ -2,7 +2,7 @@ import postRecipe from './request'
 
 // post body data 
 const data = {
-    user_id: parseInt(document.querySelector('#recommendations').dataset.fraaiseid),
+    user_id: document.querySelector('#recommendations').dataset.fraaiseid,
     from: window.location.href
 };
 
