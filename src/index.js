@@ -2,7 +2,7 @@ import postRecipe from './request'
 
 // post body data 
 const data = {
-    user_id: parseInt(document.querySelector('#recommendations').dataset.fraaiseId),
+    user_id: parseInt(document.querySelector('#recommendations').dataset.fraaiseid),
     from: window.location.href
 };
 
@@ -32,6 +32,7 @@ const toFrame = (image_url, title, link, number) => {
 };
 
 (async () => {
+    console.log(data)
     const result = await postRecipe('https://fraaise2.herokuapp.com/api/recommendations/55', data);
     console.log(result);
     toFrame(result.recipe_1.image_url, result.recipe_1.title, result.recipe_1.recipe_url, 1);
